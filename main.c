@@ -7,6 +7,9 @@ void multiplication();
 void division();
 void squareroot();
 void mpower();
+void perimeter();
+void area();
+
 
 int main()
 {
@@ -16,7 +19,8 @@ int main()
     division();
     squareroot();
     mpower();
-
+    perimeter();
+    area();
     return 0;
 }
 void sum()
@@ -71,4 +75,21 @@ void mpower()
         --b;
     }
     printf("Answer is: %d   \n", sum);
+}
+void perimeter()
+{
+    int length, width;
+    printf("Enter the length and width of the rectangle: \n");
+    scanf("%d %d", &length, &width);
+    int perimeter = 2 * (length + width);
+    printf("The perimeter of the rectangle is: %d\n", perimeter);
+}
+
+void area()
+{
+    int length, width;
+    printf("Enter the length and width of the rectangle: \n");
+    scanf("%d %d", &length, &width);
+    int area = length * width;
+    printf("The area of the rectangle is: %d\n", area);
 }
